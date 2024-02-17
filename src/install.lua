@@ -1,14 +1,21 @@
-local os = require("os")
+local utils = require("utils")
 
-local ARCH_REPOSITORY_PACKAGES = { "alacritty", "i3", "kitty" }
-local AUR_REPOSITORY_PACKAGES = { "yay", "vscodium-bin" }
+local PACKAGE_NAMES = { "alacritty", "i3", "kitty", "vscodium-bin" }
 
-function install_packages()
-  for _, package in ipairs(ARCH_REPOSITORY_PACKAGES) do
-    os.execute(string.format("sudo pacman -S %s", package))
+M = {
+  install_yay = function()
+    local yay_git_url = "https://aur.archlinux.org/yay.git";
+
+    utils.clone_repository(yay_git_url)
+
+    os.execute("cd yay && makepkg -si")
+  end,
+
+  install_packages = function()
+    for _, package in ipairs(PACKAGE_NAMES) do
+      os.execute(string.format("yay -S %s", package))
+    end
   end
-end
+}
 
-function install_aur_packages()
-
-end
+return M

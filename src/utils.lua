@@ -1,9 +1,17 @@
 local os = require("os")
 
-function create_dir(name)
-  os.execute(string.format("mkdir -p %s", name))
-end
+M = {
+  copy_config = function(path_src, path_target)
+    os.execute(string.format("cp -r %s/* %s", path_src, path_target))
+  end,
 
-function clone_repository(repository)
-  os.execute(string.format("git clone %s", repository))
-end
+  create_dir = function(name)
+    os.execute(string.format("mkdir -p %s", name))
+  end,
+
+  clone_repository = function(repository)
+    os.execute(string.format("git clone %s", repository))
+  end
+}
+
+return M

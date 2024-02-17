@@ -1,5 +1,5 @@
 # 🧐 Motivation
-### I was tired of manually installing and configuring my Arch Linux after a restoration, and I decided to automatize this.
+### I was tired of manually installing my packages and configuring my Arch Linux after a restoration, and I decided to automatize this.
 
 ## 🔨 Build requirements
 - Git

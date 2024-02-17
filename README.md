@@ -7,5 +7,5 @@
 
 ## 🏃 How to run
 1. Clone this repository: `git clone https://github.com/clonidine/arch-setup.git`
-2. Enter inside the generated directory: `cd arch-setup`
+2. Enter inside the generated directory: `cd arch-setup/src`
 3. Run: `lua setup.lua`

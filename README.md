@@ -1,7 +1,7 @@
 # 🧐 Motivation
 ### I was tired of manually installing and configuring my Arch Linux after a restoration, and I decided to automatize this.
 
-## 🔨 Build Requirements
+## 🔨 Build requirements
 - Git
 - Lua Language
 

@@ -1,6 +1,6 @@
 local utils = require("utils")
 
-local DEFAULT_CONFIG_PATH = "~/config"
+local DEFAULT_CONFIG_PATH = "~/.config"
 
 local BASE_REPOSITORY = "https://github.com/clonidine/.dotfiles.git"
 local BASE_REPOSITORY_NAME = ".dotfiles"

@@ -1,6 +1,6 @@
 local os = require("os")
 
-DEFAULT_CONFIG_PATH = "~/Documents/config"
+DEFAULT_CONFIG_PATH = "~/.config"
 
 BASE_REPOSITORY = "https://github.com/clonidine/.dotfiles.git"
 BASE_REPOSITORY_NAME = ".dotfiles"

@@ -1,6 +1,6 @@
 local os = require("os")
 
-ARCH_REPOSITORY_PACKAGES = { "alacritty", "i3", "kitty" }
+local ARCH_REPOSITORY_PACKAGES = { "alacritty", "i3", "kitty", "vscodium-bin" }
 
 function install_packages()
   for _, package in ipairs(ARCH_REPOSITORY_PACKAGES) do

@@ -1,6 +1,6 @@
 local utils = require("utils")
 
-local PACKAGE_NAMES = { "alacritty", "i3", "kitty", "vscodium-bin", "rust", "flameshot" }
+local PACKAGE_NAMES = { "alacritty", "i3", "kitty", "vscodium-bin", "rust", "flameshot", "keepassxc" }
 
 M = {
   install_yay = function()
